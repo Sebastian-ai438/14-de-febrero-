@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffcccb;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hola mi amor ❤️</h1>
+        <p>Tengo algo especial para ti. Presiona el botón de abajo.</p>
+        <button onclick="mostrarCarta()">Abrir carta</button>
+        <div id="carta" style="display:none; margin-top:20px;">
+            <h2>Te Amo 💖</h2>
+            <p>Eres la persona más especial en mi vida, y cada día te amo más. Gracias por estar siempre a mi lado.</p>
+        </div>
+    </div>
+
+    <script>
+        function mostrarCarta() {
+            document.getElementById("carta").style.display = "block";
+        }
+    </script>
+</body>
+</html>
